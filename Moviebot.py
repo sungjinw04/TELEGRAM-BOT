@@ -18,7 +18,7 @@ def movie(message):
     for element in NameList[1:]: #starts after the /movie command
         clearMovieName = clearMovieName + element + "+" 
     clearMovieName = clearMovieName[:-1] #without the last + sign
-    api = f'http://www.omdbapi.com/?t={clearMovieName}&apikey=55bbf650' #From http://www.omdbapi.com/
+    api = f'https://www.omdbapi.com/?i=tt3896198&apikey=55bbf650' #From http://www.omdbapi.com/
     #requesting the data of the movie from the website 
     req = urllib.request.Request(api, headers={'User-Agent': 'Mozilla/5.0'})
     resp = urllib.request.urlopen(req)
