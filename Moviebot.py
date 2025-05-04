@@ -7,7 +7,7 @@ from telebot import types
 import urllib.request
 import json
 
-telegramBotToken =  '5788472918:AAFSc5O0vSriF7ij192uqMC2NnpO35Auq3g' #by making a bot with BotFather in Telegram
+telegramBotToken =  '7301628973:AAERuH8GSERBB-WGv-0bNT-ukXYvXR2IaSY' #by making a bot with BotFather in Telegram
 bot = telebot.TeleBot(telegramBotToken)
 
 @bot.message_handler(commands=['movie']) #the name of the command which will be called in the following way: /movie <movie name>
@@ -18,7 +18,7 @@ def movie(message):
     for element in NameList[1:]: #starts after the /movie command
         clearMovieName = clearMovieName + element + "+" 
     clearMovieName = clearMovieName[:-1] #without the last + sign
-    api = f'http://www.omdbapi.com/?t={clearMovieName}&apikey=<API-key>' #From http://www.omdbapi.com/
+    api = f'http://www.omdbapi.com/?t={clearMovieName}&apikey=55bbf650' #From http://www.omdbapi.com/
     #requesting the data of the movie from the website 
     req = urllib.request.Request(api, headers={'User-Agent': 'Mozilla/5.0'})
     resp = urllib.request.urlopen(req)
