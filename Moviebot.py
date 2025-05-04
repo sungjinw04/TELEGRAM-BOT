@@ -7,7 +7,7 @@ from telebot import types
 import urllib.request
 import json
 
-telegramBotToken =  '5788472918:AAFSc5O0vSriF7ij192uqMC2NnpO35Auq3g' #by making a bot with BotFather in Telegram
+telegramBotToken =  '7301628973:AAERuH8GSERBB-WGv-0bNT-ukXYvXR2IaSY' #by making a bot with BotFather in Telegram
 bot = telebot.TeleBot(telegramBotToken)
 
 @bot.message_handler(commands=['movie']) #the name of the command which will be called in the following way: /movie <movie name>
